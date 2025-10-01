@@ -1,0 +1,28 @@
+[package]
+name = "esp32-soil-sensor"
+version = "0.1.0"
+authors = ["blast461 <no-reply@email.com>"]
+edition = "2021"
+resolver = "2"
+rust-version = "1.77"
+
+[[bin]]
+name = "esp32-soil-sensor"
+harness = false
+
+[profile.release]
+opt-level = "s"
+
+[profile.dev]
+debug = true
+opt-level = "z"
+
+[features]
+default = []
+
+[dependencies]
+log = "0.4"
+esp-idf-svc = "0.51"
+
+[build-dependencies]
+embuild = "0.33"

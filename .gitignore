@@ -1,0 +1,25 @@
+# Rust build artifacts
+/target
+
+# ESP-IDF Rust build cache
+/.embuild
+
+# VS Code workspace settings
+/.vscode/
+
+# ESP-IDF generated configs (keep sdkconfig.defaults tracked)
+/sdkconfig
+/sdkconfig.old
+/compile_commands.json
+
+# IDE/editor junk
+/.idea/
+/*.code-workspace
+
+# OS-specific cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and temp
+*.log
